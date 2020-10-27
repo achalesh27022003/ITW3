@@ -5,7 +5,7 @@ from tkinter import *
 
  
 root=Tk()
-root.title("Addition of two number")
+root.title("Plot Sin and Cos")
 
 
 root.configure(bg='red')

@@ -31,6 +31,6 @@ def luckyPerson():
 
 
 
-button=Button(root,text="Plot",command=luckyPerson)
+button=Button(root,text="Generate",command=luckyPerson)
 button.grid(column=0,row=2,pady=(10,0))
 root.mainloop()
