@@ -12,7 +12,7 @@ root.geometry('500x300')
 
 
 Label1=Label(root,text="Enter  frequency for  Sine wave")
-Label1.grid(column=0,row=0,pady=(10,0))#if we give only we argument than it take both argumnets as same
+Label1.grid(column=0,row=0,pady=(10,0))
 
 Label2=Label(root,text="Enter  Amplitude for  Sine wave")
 Label2.grid(column=0,row=1,pady=(10,0))
@@ -54,12 +54,10 @@ def show():
 
       a=readData() 
 
-
-
       timep=np.arange(0,a[0],0.00001)
       amp1=np.sin(timep*a[1])
       
-      plot.subplot(4,2,1)#plot one Sine wave
+      plot.subplot(4,2,1)
       plot.plot(timep, a[3]*amp1,color='darkorange')
       plot.title('Sine wave')
       plot.xlabel('Time')
@@ -71,17 +69,13 @@ def show():
 
       amp2=np.cos(timep*a[2])
 
-      plot.subplot(4,2,2)#plot second Cosine Wave
+      plot.subplot(4,2,2)
       plot.plot(timep,a[4]*amp2,color='crimson')
       plot.title('Cosine wave')
       plot.xlabel('Time')
       plot.ylabel('Amplitude')
       plot.grid(True, which='both',color='darkblue')
       plot.axhline(y=0, color='darkblue')
-
-
-
-    #  plot.savefig('graph.png')
       plot.show()
 
 def save():
