@@ -48,8 +48,8 @@ def show():
       A2=int(txt4.get())
       time=2*np.pi
 
-      ampltude =np.array([time,f1,f2,A1,A2])
-      c=np.savetxt('mycsv.csv',ampltude)#saving data into csv file
+      amplitude =np.array([time,f1,f2,A1,A2])
+      c=np.savetxt('mycsv.csv',amplitude)#saving data into csv file
 
       def readData():#fetching data from csv file
  
